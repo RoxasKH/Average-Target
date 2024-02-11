@@ -1,0 +1,35 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=DM Sans&display=swap');
+
+html {
+  scroll-behavior: smooth;
+  box-sizing: border-box; /* width include borders */
+  height: 100%;
+  touch-action: manipulation; /* Remove 300ms tap delay */
+}
+
+body {
+  background-color: #1e4164;
+  color: #fff;
+  font-family: "DM Sans", sans-serif;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #99c7f5;
+}
+
+a:hover {
+  filter: brightness(120%);
+  transition: 0.2s;
+}
