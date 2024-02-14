@@ -44,6 +44,11 @@ const StackWrapper = styled.div<StackWrapperProps>`
     margin-right: ${props => props.childrenMarginRight}px;
   }
 
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
 `;
 
 const FlexStack: React.FC<FlexStackProps> = ({

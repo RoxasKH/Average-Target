@@ -80,7 +80,6 @@ const MarkValue = styled.div`
     line-height: 70px;
     overflow-x: scroll;
     scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none;  /* IE 10+ */
     &::-webkit-scrollbar {
         background: transparent; /* Chrome/Safari/Webkit */
         width: 0px;
