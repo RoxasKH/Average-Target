@@ -9,6 +9,7 @@ const DialogScreen = styled.div`
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7 );
+    -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     top: 0;
     padding: 40px;
