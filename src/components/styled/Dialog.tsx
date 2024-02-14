@@ -51,7 +51,7 @@ const Dialog: React.FC<{children: ReactNode, onClose: (...args: any) => any}> = 
   const dispatch = useAppDispatch();
 
   const closeDialog = useCallback(
-    () => dispatch(onClose()), [dispatch]
+    () => dispatch(onClose()), [onClose, dispatch]
   );
 
   useEffect(() => {
@@ -73,7 +73,7 @@ const Dialog: React.FC<{children: ReactNode, onClose: (...args: any) => any}> = 
         document.removeEventListener('mousedown', handleClickOutside);
         document.body.style.overflow = 'auto';
     }
-  }, []);
+  }, [closeDialog]);
 
   return (
     <DialogScreen>

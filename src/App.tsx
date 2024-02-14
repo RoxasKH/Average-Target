@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Container from './components/styled/Container';
 import Button from './components/styled/Button';
 import FlexStack from './components/styled/FlexStack';
