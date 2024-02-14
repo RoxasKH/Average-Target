@@ -40,6 +40,7 @@ const MarkButton = styled.div<MarkButtonProps>`
     border-radius: 20px;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
     cursor: pointer;
+    margin: 5px 2px;
     
     ${({ variant = 'default', theme }) => {
         switch (variant) {
@@ -66,6 +67,7 @@ const MarkValue = styled.div`
     margin: auto;
     border-radius: 20px;
     background-color: ${props => props.theme.background.mark_container_box};
+    margin-top: -10px;
     margin-bottom: 10px;
     text-align: center;
     font-size: 30px;
@@ -103,12 +105,14 @@ const MarkButtons: React.FC<MarkProps> = ({ mark, subject, id }) => {
 
     return (
         <div style={{
-            margin: '-10px -10px 10px 10px'
+            position: 'relative',
+            top: '-10px',
+            right: '-10px',
         }}>
             <FlexStack 
                 align={'flex-end'} 
                 justify={'end'} 
-                spacing={5} 
+                spacing={0} 
                 direction={'row'}
             >
                 <MarkButton>
