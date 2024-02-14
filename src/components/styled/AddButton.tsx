@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { FaPlus } from "react-icons/fa6";
 
 interface AddButtonProps {
     onClick: () => void;
@@ -6,16 +7,13 @@ interface AddButtonProps {
 
 const StyledAddButton = styled.button`
 
-    font-size: 150px;
     height: 150px;
     width: 150px;
     background-color: ${props => props.theme.background.mark_container};
     color: ${props => props.theme.colors.text};
-    text-align: center;
     border-radius: 30px;
     outline: none;
     border: none;
-    line-height: 40px;
     margin: 10px;
 
     &:hover {
@@ -30,7 +28,7 @@ const StyledAddButton = styled.button`
 const AddButton: React.FC<AddButtonProps> = ({ onClick }) => {
     return (
         <StyledAddButton onClick={onClick} type='button'>
-            +
+            <FaPlus size={'100px'}/>
         </StyledAddButton>
     )
 }
