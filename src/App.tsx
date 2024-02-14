@@ -58,6 +58,13 @@ function App() {
       return element.mark;
     });
 
+    setTimeout(() => {
+      window.scrollTo({
+        top: document.documentElement.scrollHeight,
+        behavior: 'smooth',
+      });
+    }, 100);
+
     await dispatch(
       calculate(
         marks,
@@ -138,12 +145,6 @@ function App() {
             type='submit'
             variant='fullsize'
             icon={<FaCalculator />}
-            onClick={() => {
-              window.scrollTo({
-                top: document.documentElement.scrollHeight,
-                behavior: 'smooth',
-              });
-            }}
           >
             Calculate
           </Button>
