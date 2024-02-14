@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Average-Target/static/css/main.00e44364.css",
-    "main.js": "/Average-Target/static/js/main.b65b3761.js",
+    "main.js": "/Average-Target/static/js/main.c5cc1f5c.js",
     "index.html": "/Average-Target/index.html",
     "main.00e44364.css.map": "/Average-Target/static/css/main.00e44364.css.map",
-    "main.b65b3761.js.map": "/Average-Target/static/js/main.b65b3761.js.map"
+    "main.c5cc1f5c.js.map": "/Average-Target/static/js/main.c5cc1f5c.js.map"
   },
   "entrypoints": [
     "static/css/main.00e44364.css",
-    "static/js/main.b65b3761.js"
+    "static/js/main.c5cc1f5c.js"
   ]
 }
