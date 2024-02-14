@@ -23,6 +23,11 @@ const StyledAddButton = styled.button`
         cursor: pointer;
     }
 
+    @media only screen and (${props => props.theme.devices.xl}) {
+        height: 120px;
+        width: 120px;
+        margin: 8px;
+    }
 `;
 
 const AddButton: React.FC<AddButtonProps> = ({ onClick }) => {

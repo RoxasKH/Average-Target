@@ -12,7 +12,7 @@ const Container = styled.div<ContainerProps & {theme: DefaultTheme}>`
     overflow-y: ${({scrollable = false}) => scrollable ? 'scroll' : 'auto'};
     ${({scrollable = false, maxHeight = 'auto'}) => scrollable && `max-height: ${maxHeight};`}
 
-    ${({ variant = 'default', padding = '25', theme }) => {
+    ${({ variant = 'default', padding = 25, theme }) => {
         switch (variant) {
             case 'small':
                 return `
@@ -20,6 +20,10 @@ const Container = styled.div<ContainerProps & {theme: DefaultTheme}>`
                     padding: ${padding}px;
                     border-radius: 20px;
                     background-color: ${theme.background.container};
+
+                    @media only screen and (${theme.devices.xl}) {
+                        padding: ${padding-5}px;
+                    }
                 `;
             default:
                 return `
@@ -27,7 +31,7 @@ const Container = styled.div<ContainerProps & {theme: DefaultTheme}>`
                     margin: auto;
                     padding: 20px 0 80px 0;
                     
-                    @media only screen and (${theme.devices.xs}) {
+                    @media only screen and (${theme.devices.xl}) {
                         max-width: 90%;
                     }
                 `;

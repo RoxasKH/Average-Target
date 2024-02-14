@@ -29,6 +29,12 @@ const MarkContainer = styled.div`
         transition: 0.2s;
         filter: brightness(1.25);
     }
+
+    @media only screen and (${props => props.theme.devices.xl}) {
+        width: 120px;
+        height: 120px;
+        margin: 8px;
+    }
 `;
 
 const MarkButton = styled.div<MarkButtonProps>`
@@ -79,6 +85,12 @@ const MarkValue = styled.div`
         background: transparent; /* Chrome/Safari/Webkit */
         width: 0px;
     }
+    @media only screen and (${props => props.theme.devices.xl}) {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+        line-height: 50px;
+    }
 `;
 
 const MarkSubject = styled.div`
@@ -97,6 +109,12 @@ const MarkSubject = styled.div`
     text-overflow: ellipsis; /* manage text overflow */
     white-space: nowrap;
     overflow: hidden;
+
+    @media only screen and (${props => props.theme.devices.xl}) {
+        height: 15px;
+        font-size: 10px;
+        line-height: 10px;
+    }
 `;
 
 const MarkButtons: React.FC<MarkProps> = ({ mark, subject, id }) => {

@@ -40,7 +40,7 @@ const DialogContainer = styled(Container).attrs({ variant: 'small' })`
     margin-right: auto;
     width: 700px; 
 
-    @media only screen and (${props => props.theme.devices.xs}) {
+    @media only screen and (${props => props.theme.devices.xl}) {
         max-width: 90%;
     }
 `;
