@@ -31,13 +31,12 @@ export const markSlice = createSlice({
         return state.filter(mark => mark.id !== action.payload.id);
     },
     editMark: (state, action: PayloadAction<MarkState>) => {
-        const updatedArray = state.filter(mark => mark.id !== action.payload.id);
-        updatedArray.push({
-            mark: action.payload.mark,
-            subject: action.payload.subject,
-            id: action.payload.id
-        });
-        return updatedArray;
+        for (const mark of state) {
+          if(mark.id === action.payload.id) {
+            mark.mark = action.payload.mark;
+            mark.subject = action.payload.subject;
+          }
+        }
     },
     clearMarks: (state) => {
         return initialState;
